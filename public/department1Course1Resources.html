@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "view-transition" content="same-origin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/dashboardstyle.css">
+    <script src="javascript/auth.js" defer></script>
+    <title>Courses</title>
+</head>
+<body>
+    <nav class="navigation-container">
+        <div class="navigation-left">
+            <a href="dashboardAccount.html">
+                <img src="image/loginperson-removebg-preview.png" alt="Web site logo">
+            </a>
+        </div>
+        <ul id="dasNavmenuList" class="navigation-right">
+            <li><a href="dashboardHome.html">Home</a></li>
+            <li><a href="dashboardDepartement.html">Departement</a></li>
+            <li><a href="department1Courses.html">Courses</a></li>
+            <li><a href="dashboardFavorite.html">Favorite</a></li>
+            <li><a href="dashboardHome.html">Account</a></li>
+            <!-- <a class="temporal-nav-second" href="Admin/AdmindashboardHome.html">Admin Dashboard</a> -->
+        </ul>
+        <div class="hamburger-menu">
+                <img src="image/menu-hamburger.png" alt="hamburger menu" onclick="toggleMenu()">
+        </div>
+    </nav>
+    <script src="javascript/dashNav.js"></script>
+    <nav class = "navigation-rem">
+        <ul class = "nav-list">
+            <div class="return-to-promo-page">
+                <a href="index.html"><img src="image/arrow-back-outline.svg" alt="back arow" width="30"></a>
+                <p><a href="index.html"><span>Return to the promotion page</span></a></p>
+            </div>
+            <li >
+                <a href="dashboardHome.html"  style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-home.svg" alt="home logo" width="30px"></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <p class="explore"> Explore</p>
+            <li>
+                <a href="dashboardDepartement.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-department.png" alt="Department logo" width="30px"></span>
+                    <span class="text">Department</span>
+                </a>
+            </li>
+            <li class = "active">
+                <a href="dashboardCourses.html" arial-current = "page" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/db-course.png" alt="Courses logo" width="30px"></span>
+                    <span class="text">Courses</span>
+                </a> 
+            </li>
+            <li>
+                <a href="dashboardFavorite.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-fav.svg" alt="Favorite logo" width="30px"></span>
+                    <span class="text">Favorite</span>
+                </a>
+            </li>
+            <div class="nav-bottom">
+                <li>
+                    <a href="#" onclick="logout()" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/Db-log-out.svg" alt="Logout icon" width="30px"></span>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardAccount.html" style="display: grid; grid-template-columns: 1fr 4fr;  align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/ProfilePhoto.jpg" alt="profile Picture" width="30px" style="border-radius: 110%;"></span>
+                        <span class="text">Account</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <h1>Course 1</h1>
+        <div class="resource-ofcourse">
+            <div class="course-info">
+                <div class="course-info-title">
+                    <h2>Course information</h2>
+                </div>
+                <div class="course-info-content">
+                    <p>In the intricate dance of pixels and code, web design and development intertwine to craft digital masterpieces that transcend mere functionality, becoming portals to boundless creativity and innovation. Like architects of the virtual realm, designers sculpt user experiences with precision and flair, while developers breathe life into these visions, weaving intricate algorithms and technologies into seamless symphonies of interactivity. Together, they harmonize aesthetics with functionality, transforming blank screens into vibrant canvases that engage, inspire, and connect users across the vast expanse of the internet. In this dynamic realm where art meets technology, every line of code and stroke of design is a brushstroke in the ever-evolving tapestry of the digital age.</p>
+                    <p><strong>Course Code</strong>: WEB-101</p>
+                    <p><Strong>Prerequiste</Strong>: 
+                        <a href=""><abbr title="Computer Programming">CP-101</abbr></a>, 
+                        <a href="#"><abbr title="Networking ">Net 101</abbr></a>  
+                    </p>
+                </div>
+            </div>
+            <div class="course-syllabus">
+                <div class="course-syllabus-title">
+                    <h2>Syllabus</h2>
+                </div>
+                <div class="course-syllabus-content">
+                    <img src="image/link-outline.svg" alt="link image" width="40px">
+                    <div class="sylabus-link">
+                        <a href="
+                        https://www.webtrainings.in/syllabus/web-designing-course-syllabus.pdf"><p>course 1 Syllabus</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="course-book">
+                <div class="course-box-title">
+                    <h2>Books</h2>
+                </div>
+                <div class="course-book-list">
+                    <div class="course-one-book">
+                        <div class="book-image">
+                            <img src="image/bookcover.png" alt="Book cover page" width="100">
+                        </div>
+                        <div class="book-name-and-info">
+                            <div class="book-name-and-info-left">
+                                <div class="name-of-book">
+                                    <p>HTML & CSS:
+                                        The Complete Reference,
+                                        Fifth Edition</p>
+                                </div>
+                                <div class="author-and-edition-of-book">
+                                    <p>by: Thomas A. Powell</p>
+                                </div>
+                            </div>
+                            <div class="book-name-and-info-right">
+                                <div class="book-category">
+                                    <p>Category</p>
+                                </div>
+                                <div class="book-category-name">
+                                    <p><strong>Text Book</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-book">
+                        <div class="book-image">
+                            <img src="image/bookcover1.jpg" alt="Book cover page" width="100">
+                        </div>
+                        <div class="book-name-and-info">
+                            <div class="book-name-and-info-left">
+                                <div class="name-of-book">
+                                    <p>Beginner’s Guide to HTML  fist Edition</p>
+                                </div>
+                                <div class="author-and-edition-of-book">
+                                    <p>by: Michael Gabriel</p>
+                                </div>
+                            </div>
+                            <div class="book-name-and-info-right">
+                                <div class="book-category">
+                                    <p>Category</p>
+                                </div>
+                                <div class="book-category-name">
+                                    <p><strong>Text Book</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-video">
+                <div class="course-video-title">
+                    <h2>Video</h2>
+                </div>
+                <div class="course-Video-list">
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="1763" height="986" src="https://www.youtube.com/embed/9He4UBLyk8Y?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Front End Developer Roadmap 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>1: Front End Developer Roadmap 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/9He4UBLyk8Y?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Front End Developer Roadmap 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>2: HTML Tutorial - Website Crash Course for Beginners</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/OXGznpKZ_sA?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="CSS Tutorial – Full Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>3: CSS Tutorial – Full Course for Beginners</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/WPqXP_kLzpo?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Visual Studio Code Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>
+                                    4: Visual Studio Code Crash Course
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/jS4aFq5-91M?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="JavaScript Programming - Full Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>
+                                    5: JavaScript Programming - Full Course</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/_ZvnD73m40o?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Prompt Engineering Tutorial – Master ChatGPT and LLM Responses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>6: Prompt Engineering Tutorial – Master ChatGPT and LLM Responses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/krfUjg0S2uI?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Build a Simple Website with HTML, CSS, JavaScript – Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>7: Build a Simple Website with HTML, CSS, JavaScript – Course for Beginners</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/y51Cv4wnsPw?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Web App Tutorial - JavaScript, Mobile First, Accessibility, Persistent Data, Sass" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>8. Web App Tutorial - JavaScript, Mobile First, Accessibility, Persistent Data, Sass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/RGOj5yH7evk?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Git and GitHub for Beginners - Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>
+                                    9: Git and GitHub for Beginners - Crash Course</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-Video">
+                        <div class="Video-image">
+                            <iframe width="802" height="451" src="https://www.youtube.com/embed/iJKCj8uAHz8?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E" title="Learn Bootstrap 5 and SASS by Building a Portfolio Website - Full Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="Video-name-and-info">
+                            <div class="name-of-Video">
+                                <p>10. Learn Bootstrap 5 and SASS by Building a Portfolio Website - Full Course</p>
+                            </div>
+                    </div>
+                </div>
+                   
+            </div>
+            <div class="course-audio">
+                <div class="course-audio-title">
+                    <h2>Audio</h2>
+                </div>
+                <div class="course-audio-list">
+                    <div class="course-one-audio">
+                        <div class="audio-file">
+                            <audio controls>
+                                <source src="audio/Absolute_beginner_s_guide_to_starting_web_development_i_iBcpIPPXja8.mp3">
+                            </audio>
+                        </div>
+                        <div class="audio-name-and-info">
+                            <div class="name-of-audio">
+                                <p>Absolute beginner’s guide to starting web development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-audio">
+                        <div class="audio-file">
+                            <audio controls>
+                                <source src="audio/Absolute_beginner_s_guide_to_starting_web_development_i_iBcpIPPXja8.mp3">
+                            </audio>
+                        </div>
+                        <div class="audio-name-and-info">
+                            <div class="name-of-audio">
+                                <p>Absolute beginner’s guide to starting web development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-one-audio">
+                        <div class="audio-file">
+                            <audio controls>
+                                <source src="audio/Absolute_beginner_s_guide_to_starting_web_development_i_iBcpIPPXja8.mp3">
+                            </audio>
+                        </div>
+                        <div class="audio-name-and-info">
+                            <div class="name-of-audio">
+                                <p>Absolute beginner’s guide to starting web development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class = "course-exam-assignement-problemset">
+                <div class="course-exam-assignement-problemset-title">
+                    <h2>Past Exams Assignement and Problem Sets</h2>
+                </div>
+                <table class = "table-course-exam-assignement-problemset">
+                    <tr>
+                        <th rowspan="3">2001</th>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <!-- 2nd row set -->
+                    <tr>
+                        <th rowspan="3">2002</th>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <!-- 3rd Row set -->
+                    <tr>
+                        <th rowspan="3" >2003</th>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://circuit.bcit.ca/repository/islandora/object/repository%3A1365/datastream/PDF/view">Exam </a></td>
+                        <td><a href="https://home.uchicago.edu/~kanit/kanitk/Teaching_%28UW-Madison%29/Entries/2014/8/26_ECON_302__Intermediate_Macroeconomic_Theory(Fall_2014)_files/sample_mult.pdf">Exam Solution </a></td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section class = "course-additoinal-Resources">
+                <div class="course-additoinal-Resources-title">
+                    <h2>External Resource</h2>
+                </div>
+                <div class="link-to-course-additoinal-Resources">
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 1</a>
+                    </div>
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 2</a>
+                    </div>
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 3</a>
+                    </div>
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 4</a>
+                    </div>
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 5</a>
+                    </div>
+                    <div class="provided-external-link">
+                        <a href="https://www.freecodecamp.org/web">Resource 6</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

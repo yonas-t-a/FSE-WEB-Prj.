@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit College Name</title>
+    <script src="javascript/editCollege.js" defer></script>
+</head>
+<body>
+    <h1>Edit College Name</h1>
+    <form id="editCollegeForm">
+        <div id="collegesList">
+            <!-- Colleges will be listed here -->
+        </div>
+        <label for="newName">New College Name:</label>
+        <input type="text" id="newName" name="newName" required>
+        <button type="submit">Update</button>
+    </form>
+    <p id="message"></p>
+    <button onclick="logout()">Logout</button>
+</body>
+</html>

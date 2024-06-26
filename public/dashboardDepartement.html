@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "view-transition" content="same-origin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/dashboardstyle.css">
+    <script src="javascript/auth.js" defer></script>
+    <title>Department</title>
+</head>
+<body>
+    <nav class="navigation-container">
+        <div class="navigation-left">
+            <a href="dashboardAccount.html">
+                <img src="image/loginperson-removebg-preview.png" alt="Web site logo">
+            </a>
+        </div>
+        <ul id="dasNavmenuList" class="navigation-right">
+            <li><a href="dashboardHome.html">Home</a></li>
+            <li><a href="dashboardDepartement.html">Departement</a></li>
+            <li><a href="department1Courses.html">Courses</a></li>
+            <li><a href="dashboardFavorite.html">Favorite</a></li>
+            <li><a href="dashboardHome.html">Account</a></li>
+            <!-- <a class="temporal-nav-second" href="Admin/AdmindashboardHome.html">Admin Dashboard</a> -->
+        </ul>
+        <div class="hamburger-menu">
+                <img src="image/menu-hamburger.png" alt="hamburger menu" onclick="toggleMenu()">
+        </div>
+    </nav>
+    <script src="javascript/dashNav.js"></script>
+    <nav class = "navigation-rem">
+        <ul class = "nav-list">
+            <div class="return-to-promo-page">
+                <a href="index.html"><img src="image/arrow-back-outline.svg" alt="back arow" width="30"></a>
+                <p><a href="index.html"><span>Return to the promotion page</span></a></p>
+            </div>
+            <li >
+                <a href="dashboardHome.html"  style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-home.svg" alt="home logo" width="30px"></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <p class="explore"> Explore</p>
+            <li class = "active">
+                <a href="dashboardDepartement.html"arial-current = "page" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-department.png" alt="Department logo" width="30px"></span>
+                    <span class="text">Department</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboardCourses.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/db-course.png" alt="Courses logo" width="30px"></span>
+                    <span class="text">Courses</span>
+                </a> 
+            </li>
+            <li>
+                <a href="dashboardFavorite.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-fav.svg" alt="Favorite logo" width="30px"></span>
+                    <span class="text">Favorite</span>
+                </a>
+            </li>
+            <div class="nav-bottom">
+                <li>
+                    <a href="#" onclick="logout()" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/Db-log-out.svg" alt="Logout icon" width="30px"></span>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardAccount.html" style="display: grid; grid-template-columns: 1fr 4fr;  align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/loginperson-removebg-preview.png" alt="profile Picture" width="30px" style="border-radius: 110%;"></span>
+                        <span class="text">Account</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <h1>Department</h1>
+        <div class="college-dep">
+            <div class="collage-name">
+                <h2>Institute of Technology</h2>
+                <hr>
+            </div>
+            <div class="dep-card-all">
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of information technology and Engineering</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of Civil and Environment Engineering</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of Mechanical and Industrial Engineering</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of Electrical and Computer Engineering</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of Chemical and Biomedical Engineering</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+            </div>
+        </div>
+        <div class="college-dep">
+            <div class="collage-name">
+                <h2>College of Natural And Computational Science</h2>
+                <hr>
+            </div>
+            <div class="dep-card-all">
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>School of Information Science</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Department of Computer Science</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Department Mathematics</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Department of Physics</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of Statistics</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+            </div>
+        </div>
+        <div class="college-dep">
+            <div class="collage-name">
+                <h2>College of Business and Economics</h2>
+                <hr>
+            </div>
+            <div class="dep-card-all">
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of Accouting and Finance</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of Economics </p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of Management</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of Marketing </p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+                <a href="department1Courses.html" class="dep-card dept-card-one">
+                    <p>Departement of information Systems</p>
+                    <div class="pushBUTNtoLeftRight"><img src="image/star-removebg-preview.png" alt="The is the button to Favorite" width="30px"></div>
+                </a>
+            </div>
+        </div>
+        <script src="test.js"></script>
+
+    </main>
+</body>
+</html>

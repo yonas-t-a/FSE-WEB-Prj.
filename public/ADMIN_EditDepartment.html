@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Department</title>
+    <script src="javascript/editDepartment.js" defer></script>
+</head>
+<body>
+    <h1>Edit Department</h1>
+    <form id="editDepartmentForm">
+        <h2>Select Department:</h2>
+        <div id="departmentsList">
+            <!-- Departments will be listed here -->
+        </div>
+
+        <h2>New Department Name:</h2>
+        <input type="text" id="newDepartmentName" name="newDepartmentName">
+
+        <h2>Change Owner College:</h2>
+        <div id="collegesList">
+            <!-- Colleges will be listed here -->
+        </div>
+
+        <button type="submit">Update</button>
+    </form>
+    <p id="message"></p>
+    <button onclick="logout()">Logout</button>
+</body>
+</html>

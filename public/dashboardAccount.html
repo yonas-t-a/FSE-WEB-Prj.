@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "view-transition" content="same-origin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/dashboardstyle.css">
+    <script src="javascript/auth.js" defer></script>
+    <title>Account</title>
+</head>
+<body class="depaccount-remove-scroll-effect">
+    <nav class="navigation-container">
+        <div class="navigation-left">
+            <a href="dashboardAccount.html">
+                <img src="image/loginperson-removebg-preview.png" alt="Web site logo">
+            </a>
+        </div>
+        <ul id="dasNavmenuList" class="navigation-right">
+            <li><a href="dashboardHome.html">Home</a></li>
+            <li><a href="dashboardDepartement.html">Departement</a></li>
+            <li><a href="department1Courses.html">Courses</a></li>
+            <li><a href="dashboardFavorite.html">Favorite</a></li>
+            <li><a href="dashboardHome.html">Account</a></li>
+            <!-- <a class="temporal-nav-second" href="Admin/AdmindashboardHome.html">Admin Dashboard</a> -->
+        </ul>
+        <div class="hamburger-menu">
+                <img src="image/menu-hamburger.png" alt="hamburger menu" onclick="toggleMenu()">
+        </div>
+    </nav>
+    <script src="javascript/dashNav.js"></script>
+    <nav class = "navigation-rem">
+        <ul class = "nav-list" >
+            <div class="return-to-promo-page">
+                <a href="index.html"><img src="image/arrow-back-outline.svg" alt="back arow" width="30"></a>
+                <p><a href="index.html"><span>Return to the promotion page</span></a></p>
+            </div>
+            <li >
+                <a href="dashboardHome.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-home.svg" alt="home logo" width="30px"></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <p class="explore"> Explore</p>
+            <li>
+                <a href="dashboardDepartement.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-department.png" alt="Department logo" width="30px"></span>
+                    <span class="text">Department</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboardCourses.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/db-course.png" alt="Courses logo" width="30px"></span>
+                    <span class="text">Courses</span>
+                </a> 
+            </li>
+            <li>
+                <a href="dashboardFavorite.html" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                    <span class="icon"><img src="image/Db-fav.svg" alt="Favorite logo" width="30px"></span>
+                    <span class="text">Favorite</span>
+                </a>
+            </li>
+            <div class="nav-bottom">
+                <li>
+                    <a href="#" onclick="logout()" style="display: grid; grid-template-columns: 1fr 3fr; align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/Db-log-out.svg" alt="Logout icon" width="30px"></span>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+                <li class = "active">
+                    <a href="dashboardAccount.html" style="display: grid; grid-template-columns: 1fr 4fr;  align-items: center; font-size: 25px;">
+                        <span class="icon"><img src="image/loginperson-removebg-preview.png" alt="profile Picture" width="30px" style="border-radius: 110%;"></span>
+                        <span class="text">Account</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <div class="depaccount-container">
+            <div class="depaccount-photo">
+                <img src="image/loginperson-removebg-preview.png" alt="">
+                <p>Tom John Smith </p>
+            </div>
+            <div class="depaccount-form">
+                <form action="">
+                    <input class = "depaccount-form-edit" type="text" name="" id="" placeholder="Tom John Smith ">
+                    <input class = "depaccount-form-edit" type="text" name="" id="" placeholder="tom.John.Smith@courseHub.tech.et ">
+                    <input class = "depaccount-form-edit" type="password" name="" id="" placeholder="******************">
+                    <div class="depaccount-form-to-the-left">
+                    <button class = "depaccount-form-button" >Edit</button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
